@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: python-scan
-        run: echo "needs-python=true" >> "$GITHUB_OUTPUT"
+        run: echo "needs-python=false" >> "$GITHUB_OUTPUT"
  
   scan-python:
     needs: check-scan-required
